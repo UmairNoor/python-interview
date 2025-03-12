@@ -5,3 +5,10 @@ def square(number):
 
 result = square(5)
 print(result)
+
+#Create a functions that takes two parameters and return their sum
+def sum(a,b):
+    return a+b
+
+final = sum(2,1)
+print(final) 
