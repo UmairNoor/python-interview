@@ -18,17 +18,16 @@ cube = lambda x: x**2
 print(cube(3))
 
 #Function with args 
-# def sum_all(*args):
-#     print(args)
-#     for i in args:
-#         print(i**2)
-#     return sum(args)
-
-# print(sum_all(1,2,3,4))
-
 import builtins  # Import Python's built-in functions
-
 def sum_all(*args):
     return builtins.sum(args)  # Use the built-in sum()
 
 print(sum_all(1, 2, 3, 4))  # Output: 10
+
+#Function with yeild 
+def even_generator (limit):
+    for i in range(2,limit+1,2):
+        yield i 
+
+for num in even_generator(10):
+    print(num)
